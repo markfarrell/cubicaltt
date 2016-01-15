@@ -241,3 +241,7 @@ slowtest (A : U) : Id (equiv A A)
 --      (canIdToEquiv A B) (transEquiv A B)
 --      (canIdToEquivIsTransEquiv A B)
 --      (transEquivIsEquiv A B)
+
+
+univalence1 (A B : U) : Id U (Id U A B) (equiv A B) = 
+ isoId (Id U A B) (equiv A B) (transEquiv A B) (transEquivToId A B) (idToId A B) (eqToEq A B)

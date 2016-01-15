@@ -14,6 +14,8 @@ subtypeEquality (A : U) (B : A -> U) (pB : (x : A) -> prop (B x))
 
 -- (* Propositions *)
 
+prop (A : U) : U = (a b : A) -> Id A a b
+
 hProp : U = (X : U) * prop X
 
 ishinh_UU (X : U) : U = (P : hProp) -> ((X -> P.1) -> P.1)

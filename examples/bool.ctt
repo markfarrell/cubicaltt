@@ -1,6 +1,7 @@
 module bool where
 
 import hedberg
+import equiv
 
 data bool = false | true
 

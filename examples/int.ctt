@@ -2,6 +2,7 @@ module int where
 
 import nat
 import discor
+import equiv
 
        ---------------------------------------------------
        -- Example: Non-trivial equality between Z and Z --

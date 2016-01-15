@@ -8,7 +8,7 @@ nat2 : U = and nat nat
 
 rel : eqrel nat2 = (r,rem)
   where
-  r : hrel nat2) = \(x y : nat2) -> 
+  r : hrel nat2 = \(x y : nat2) -> 
     (Id nat (add x.1 y.2) (add x.2 y.1),natSet (add x.1 y.2) (add x.2 y.1))
     
   rem : iseqrel nat2 r = ((rem1,refl nat2),rem2)
